@@ -27,18 +27,21 @@ body {
   margin: 88px 80px 48px 80px;
   display: flex;
   flex-direction: column;
-  gap: 65px;
   align-items: center;
   /* justify-content: flex-end; ? */
 }
 
 main {
   display: flex;
-  flex-direction: column;;
-  gap: 40px;
+  flex-direction: column;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -50,10 +53,17 @@ header {
   color: var(--text-headline);
 }
 
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
 .highlight {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin: 40px 0;
 }
 
 img {
@@ -68,12 +78,6 @@ img {
   text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: var(--text-primary);
-}
-
 h2 {
   font-size: 32px;
   font-weight: bold;
@@ -86,4 +90,8 @@ h3 {
 
 .subtitle {
   font-style: italic;
+}
+
+footer{
+  margin-top: 65px;
 }
