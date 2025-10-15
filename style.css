@@ -8,7 +8,6 @@
 
   --text-primary: #1b1b1b;
   --text-secondary: #333333;
-  --text-tertiary: #696969;
   --text-headline: #e1624f;
 
   --accent-blue: #0c51a7;
@@ -24,16 +23,13 @@
 }
 
 body {
+  color: var(--text-secondary);
   margin: 88px 80px 48px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background-default);
   /* justify-content: flex-end; ? */
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -63,35 +59,105 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: 40px 0;
+  margin-top: 40px;
+  padding: 4px 0;
+}
+
+.highlight img {
+  height: 660px;
 }
 
 img {
-  max-width: 100%;
+  height: 350px;
+  width: 100%;
   border-radius: 28px;
   object-fit: cover;
 }
 
-.highlight p {
+.subtitle {
   font-style: italic;
-  color: var(--text-secondary);
   text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  margin: 40px 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-primary);
+}
+
+.description {
+  margin: 24px 0 64px 0;
 }
 
 h2 {
   font-size: 32px;
-  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 h3 {
+  color: var(--text-primary);
+  margin: 20px 0 4px 0;
   font-size: 28px;
   font-weight: bold;
 }
 
-.subtitle {
-  font-style: italic;
+.tags-container {
+  font-weight: bold;
 }
 
-footer{
+.label {
+  margin-top: 30px;
+}
+
+.tag {
+  margin-left: 20px;
+}
+
+.tag::marker {
+  color: var(--text-primary);
+}
+
+.tag.historia {
+  color: var(--accent-blue);
+}
+
+.tag.casais {
+  color: var(--accent-purple);
+}
+
+.tag.familias {
+  color: var(--accent-pink);
+}
+
+.tag.orcamento {
+  color: var(--accent-orange);
+}
+
+.ending-text {
+  text-align: center;
+}
+
+footer {
   margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer i {
+  margin: 0 4px;
 }
